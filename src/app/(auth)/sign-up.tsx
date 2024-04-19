@@ -1,11 +1,11 @@
-import { View, Text,TextInput } from "react-native";
-import React, { useState } from "react";
-import { Link,Stack } from "expo-router";
-import Button from "@/src/components/Button";
-const SigIN = () => {
-  const [email,setEmail]=useState('');
-  const [password,setPassword]=useState('');
+import { View, Text,TextInput } from 'react-native'
+import { useState } from 'react';
+import { Stack,Link } from 'expo-router';
+import Button from '@/src/components/Button';
 
+const SignUp = () => {
+    const [email,setEmail]=useState('');
+  const [password,setPassword]=useState('');
   return (
     <View className=" flex-1 justify-center p-5 bg-slate-200">
       <Stack.Screen options={{ title: "Sign in" }} />
@@ -24,12 +24,12 @@ const SigIN = () => {
         placeholder="******"
         className="bg-white rounded-md p-2 mt-1 mb-5"
       />
-      <Button text="Sign in"  />
-      <Link href="/sign-up" className="text-center text-tintColorLight font-medium text-xl" >
-        Create an account
+      <Button text="Create account"  />
+      <Link href="/sign-in" className="text-center text-tintColorLight font-medium text-xl" >
+        Sign in
       </Link>
     </View>
-  );
-};
+  )
+}
 
-export default SigIN;
+export default SignUp
