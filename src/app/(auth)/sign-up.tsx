@@ -22,14 +22,15 @@ const SignUp = () => {
         value={password}
         onChangeText={setPassword}
         placeholder="******"
+        secureTextEntry
         className="bg-white rounded-md p-2 mt-1 mb-5"
       />
       <Button text="Create account"  />
       <Link href="/sign-in" className="text-center text-tintColorLight font-medium text-xl" >
-        Sign in
+        Sign In
       </Link>
     </View>
   )
 }
 
-export default SignUp
+export default SignUp; 
