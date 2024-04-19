@@ -1,11 +1,11 @@
-import { View, Text,TextInput } from 'react-native'
-import { useState } from 'react';
-import { Stack,Link } from 'expo-router';
-import Button from '@/src/components/Button';
+import { View, Text, TextInput } from "react-native";
+import { useState } from "react";
+import { Stack, Link } from "expo-router";
+import Button from "@/src/components/Button";
 
 const SignUp = () => {
-    const [email,setEmail]=useState('');
-  const [password,setPassword]=useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   return (
     <View className=" flex-1 justify-center p-5 bg-slate-200">
       <Stack.Screen options={{ title: "Sign in" }} />
@@ -25,12 +25,15 @@ const SignUp = () => {
         secureTextEntry
         className="bg-white rounded-md p-2 mt-1 mb-5"
       />
-      <Button text="Create account"  />
-      <Link href="/sign-in" className="text-center text-tintColorLight font-medium text-xl" >
+      <Button text="Create account" />
+      <Link
+        href="/sign-in"
+        className="text-center text-tintColorLight font-medium text-xl"
+      >
         Sign In
       </Link>
     </View>
-  )
-}
+  );
+};
 
-export default SignUp; 
+export default SignUp;

@@ -1,10 +1,10 @@
-import { View, Text,TextInput } from "react-native";
+import { View, Text, TextInput } from "react-native";
 import React, { useState } from "react";
-import { Link,Stack } from "expo-router";
+import { Link, Stack } from "expo-router";
 import Button from "@/src/components/Button";
 const SigIN = () => {
-  const [email,setEmail]=useState('');
-  const [password,setPassword]=useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <View className=" flex-1 justify-center p-5 bg-slate-200">
@@ -24,8 +24,11 @@ const SigIN = () => {
         placeholder="******"
         className="bg-white rounded-md p-2 mt-1 mb-5"
       />
-      <Button text="Sign in"  />
-      <Link href="/sign-up" className="text-center text-tintColorLight font-medium text-xl" >
+      <Button text="Sign in" />
+      <Link
+        href="/signup"
+        className="text-center text-tintColorLight font-medium text-xl"
+      >
         Create an account
       </Link>
     </View>
